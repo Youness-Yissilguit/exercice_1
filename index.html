@@ -7,13 +7,79 @@
     <!-- Robot font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">  
     <!-- css style file -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Exercice 1</title>
 </head>
 <body>
-    
+    <div class="table_container">
+        <table CELLSPACING=0>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date de Creation</th>
+                    <th>Etat</th>
+                    <th>Nome</th>
+                    <th>Prénom</th>
+                    <th>Nome d'utilisateur</th>
+                    <th>Matricule</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="my_table_body">
+                <!-- here the table will be filled from js -->
+            </tbody>
+        </table>
+    </div>
+    <div class="add_user_container">
+        <button class="add_user btn">Ajouter Utilisateur</button>
+    </div>
+    <!-- add user modale -->
+        <div class="modale_container">
+            <div class="modale">
+                <div class="modale_head">
+                    <h2>Ajouter Un Utilisateur</h2>
+                </div>
+                <form>
+                    <div class="input_grp">
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" id="nom">
+                        </div>
+                        <div>
+                            <label for="">Prénome</label>
+                            <input type="text" id="nom">
+                        </div>
+                    </div>
+                    <div class="input_grp">
+                        <div>
+                            <label for="etat">Etat</label>
+                            <select id="etat">
+                                <option value="valide ">Validé</option>
+                                <option value="on-validation">En validation</option>
+                                <option value="rejected">Rejeté</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="nom_util">Nome d'utilisateur</label>
+                            <input type="text" id="nom_util">
+                        </div>
+                    </div>
+                    <div class="input_grp">
+                        <div>
+                            <label for="date">Date de Creation</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div>
+                            <label for="metaricule">Matricule</label>
+                            <input type="text" id="metaricule">
+                        </div>
+                    </div>
+                    <input class="btn""" type="submit" value="Enregistrer">
+                </form>
+            </div>
+        </div>
     <script src="./js/app.js"></script>
 </body>
 </html>
