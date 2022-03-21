@@ -144,3 +144,12 @@ body{
 .show_modale .modale{
     transform: translateY(0);
 }
+.error{
+    margin: 10px 0;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+.error_input{
+    border: 1px solid red !important;
+}

@@ -42,41 +42,42 @@
                     <h2>Ajouter Un Utilisateur</h2>
                 </div>
                 <form>
+                    <p class="error" id="error"></p>
                     <div class="input_grp">
                         <div>
-                            <label for="">Nome</label>
-                            <input type="text" id="nom">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
                         </div>
                         <div>
-                            <label for="">Prénome</label>
-                            <input type="text" id="nom">
+                            <label for="first_name">Prénome</label>
+                            <input type="text" id="first_name" required>
                         </div>
                     </div>
                     <div class="input_grp">
                         <div>
-                            <label for="etat">Etat</label>
-                            <select id="etat">
-                                <option value="valide ">Validé</option>
-                                <option value="on-validation">En validation</option>
-                                <option value="rejected">Rejeté</option>
+                            <label for="status">Etat</label>
+                            <select id="status" required>
+                                <option value="Validé">Validé</option>
+                                <option value="En validation">En validation</option>
+                                <option value="Rejeté">Rejeté</option>
                             </select>
                         </div>
                         <div>
-                            <label for="nom_util">Nome d'utilisateur</label>
-                            <input type="text" id="nom_util">
+                            <label for="username">Nome d'utilisateur</label>
+                            <input type="text" id="username" required>
                         </div>
                     </div>
                     <div class="input_grp">
                         <div>
                             <label for="date">Date de Creation</label>
-                            <input type="date" id="date">
+                            <input type="date" id="date" required>
                         </div>
                         <div>
                             <label for="metaricule">Matricule</label>
-                            <input type="text" id="metaricule">
+                            <input type="text" id="matricule" required>
                         </div>
                     </div>
-                    <input class="btn""" type="submit" value="Enregistrer">
+                    <input id="submit" class="btn""" type="submit" value="Enregistrer">
                 </form>
             </div>
         </div>
